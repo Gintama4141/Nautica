@@ -4,7 +4,7 @@ import { connect } from "cloudflare:sockets";
 
 // Variables
 const rootDomain = "my-vpnvip.my.id"; // Ganti dengan domain utama kalian
-const serviceName = "mwk"; // Ganti dengan nama workers kalian
+const serviceName = "tes-aja"; // Ganti dengan nama workers kalian
 const apiKey = "b08628b6f045066eefe8f8d8d56483fd09861"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
 const apiEmail = "wahyumuhammad332@gmail.com"; // Ganti dengan email yang kalian gunakan
 const accountID = "92607cdb7d55c35c8d1ac6c7fc847c4d"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
