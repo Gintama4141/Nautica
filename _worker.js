@@ -24,7 +24,7 @@ const RELAY_SERVER_UDP = {
   host: "udp-relay.hobihaus.space", // Kontribusi atau cek relay publik disini: https://hub.docker.com/r/kelvinzer0/udp-relay
   port: 7300,
 };
-const PRX_HEALTH_CHECK_API = "https://id1.foolvpn.web.id/api/v1/check";
+const PRX_HEALTH_CHECK_API = "https://proxycheck.sonzaixworker01.workers.dev";
 const CONVERTER_URL = "https://api.foolvpn.web.id/convert";
 const WS_READY_STATE_OPEN = 1;
 const WS_READY_STATE_CLOSING = 2;
@@ -792,7 +792,7 @@ function safeCloseWebSocket(socket) {
 }
 
 async function checkPrxHealth(prxIP, prxPort) {
-  const req = await fetch(`${PRX_HEALTH_CHECK_API}?ip=${prxIP}:${prxPort}`);
+  const req = await fetch(`${PRX_HEALTH_CHECK_API}/${prxIP}:${prxPort}`);
   return await req.json();
 }
 
